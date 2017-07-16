@@ -1,3 +1,6 @@
+# Express.js Course
+This is a course for the mvc framework for Node.js, Express.js
+
 ## Requiriments
 - (Intermediate Knowledge) html, css, javascript
 - (Basic Knowledge) Command Line
