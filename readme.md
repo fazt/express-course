@@ -9,7 +9,6 @@ This is a course for the mvc framework for Node.js, Express.js
 # Course
   - installation: `npm i express --save`
   - hello-world
-  - basic-http-server
   - middlewares
     - logger
     - middleware express.static

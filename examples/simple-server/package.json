@@ -1,0 +1,22 @@
+{
+  "name": "simple-server",
+  "version": "1.0.0",
+  "description": "# Dependencies this project depends on the following dependencies: \t- expressjs \t- (ejs)![https://github.com/tj/ejs]",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+		"start": "node app.js",
+		"dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
