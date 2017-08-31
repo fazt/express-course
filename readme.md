@@ -8,24 +8,13 @@ This is a course for the mvc framework for Node.js, Express.js
 
 # Course
   - installation: `npm i express --save`
-  - hello-world
-  - middlewares
-    - logger
-    - middleware express.static
-  - third-parthy-libraries:
-      - middleware body-parser  
-  - request and response
 
-  - nodemon
-  - configuring scripts in package.json
-  - template engines: ejs, handlebars, pug
-      - configuring views
-      - manipuling and passing data
-      - partials
-  - manage errors
-  - structure files
-  - deploy in cloud
 
 # Useful Commands
 - To start a New Project: `npm init --yes`
 - TO install Express framework: `npm install express --save`
+
+# Useful Libraries
+- nodemon: `npm i nodemon --global`
+- helmet
+- mongodb
