@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+app.get('/hello/:who', (req, res) => {
+  res.end('Hello ' + req.params.who + '.');
+});
+
 // to avoid creating a specif route or every user
 app.get('/users/:userId', (req, res) => {
   var userId = parseInt(req.params.userId, 10);

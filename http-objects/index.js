@@ -18,6 +18,14 @@ app.get('/', (req, res) => {
   res.sendFile(`${__dirname}/mydocument.txt`);
 });
 
+app.get('/google', (req, res) => {
+  res.redirect('http://google.com');
+});
+
+app.get('/redirectme', (req, res) => {
+  res.redirect('/');
+});
+
 app.listen(3000, () => {
   console.log('server running on port 3000')
 });
