@@ -1,14 +1,27 @@
 # Express.js Course
-This is a course for the mvc framework for Node.js, Express.js
 
-## Requiriments
-- (Intermediate Knowledge) html, css, javascript
-- (Basic Knowledge) Command Line
-- (Basic Knowledge) Node.js
+## Course Requiriments
+- HTML, CSS Basics
+- Node.js Basics
+  - Javascript
+- How to use Command Line
 
-# Course
+## What is Express?
+- is a framework on top of Nodejs.
+- is an abstraction layer on top of nodejs
+
+# installation
   - installation: `npm i express --save`
 
+# PART I
+- hello-world.js
+- middlewares/
+- routing/
+- http-objects/
+- views/
+## Examples
+- Express-FirstServer
+- Express-GuestBook-App
 
 # Useful Commands
 - To start a New Project: `npm init --yes`
