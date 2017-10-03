@@ -1,6 +1,7 @@
 # what is middleware?
 - is a request handler in vanilla node but rather
   that having just one handler, allow happen many in sequence
+- allow to break a single handler function in multiple
 
 - middlewares.js
 - logging-middleware.js
@@ -13,3 +14,9 @@
 - helmet
 - cookie-parser
 - response-time
+- body-parser
+- compression
+- connect assets
+
+# Examples
+- express-static-server

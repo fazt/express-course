@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
 
+// serving static files withou conflict
+// diferen to:
+//   app.use(express.static(publicPath))
+//   app.use(express.static(userUploadPath))
+
 // public/logo.png
 const publicPath = path.resolve(__dirname, 'public');
 app.use('/public', express.static(publicPath));
