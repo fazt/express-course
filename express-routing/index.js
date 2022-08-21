@@ -1,12 +1,6 @@
-const http = require('http');
 const express = require('express');
-const path = require('path');
-const app = express();
 
-// every request goes trough this middleware
-// and continues on if no files are foudn
-var publicPath = path.resolve(__dirname, 'public');
-app.use(express.static(publicPath));
+const app = express();
 
 app.get('/', (req, res) => {
   res.end('Welcome to the Home Page');
@@ -30,3 +24,4 @@ app.use((req, res) => {
 });
 
 app.listen(3000);
+console.log('Server on port 3000');

@@ -8,6 +8,11 @@ const app = express();
 var publicPath = path.resolve(__dirname, 'public');
 app.use(express.static(publicPath));
 
+// // every request goes trough this middleware
+// // and continues on if no files are foudn
+// const publicPath = path.resolve(__dirname, 'public');
+// app.use(express.static(publicPath));
+
 app.use((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end("Looks like you didn't find a static file")

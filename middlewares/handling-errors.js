@@ -1,15 +1,15 @@
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 
 const app = express();
 
-var filePath = path.join(__dirname, 'jpg');
-app.use((req, res) {
+var filePath = path.join(__dirname, "jpg");
+app.use((req, res) => {
   res.sendFile(filePath, (err) => {
     if (err) {
-      next(new Error('Error sending File!'));
+      next(new Error("Error sending File!"));
     } else {
-      console.log('file sent!');
+      console.log("file sent!");
     }
   });
 });
@@ -25,9 +25,9 @@ app.use((err, req, res, next) => {
 
 app.use((err, req, res, next) => {
   res.status(500);
-  res.send('Internal Server Error');
+  res.send("Internal Server Error");
 });
 
 app.listen(3000, () => {
-  console.log('server on port', 3000);
+  console.log("server on port", 3000);
 });
