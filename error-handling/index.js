@@ -3,7 +3,8 @@ const path = require("path");
 
 const app = express();
 
-var filePath = path.join(__dirname, "jpg");
+const filePath = path.join(__dirname, "jpg"); // file does not exist
+
 app.use((req, res) => {
   res.sendFile(filePath, (err) => {
     if (err) {
@@ -28,6 +29,5 @@ app.use((err, req, res, next) => {
   res.send("Internal Server Error");
 });
 
-app.listen(3000, () => {
-  console.log("server on port", 3000);
-});
+app.listen(3000);
+console.log("server on port", 3000);
